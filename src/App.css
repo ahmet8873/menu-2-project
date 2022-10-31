@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image{
+    height: 100px;
+    width: 150px;
+    object-fit: cover;
+    border: 2px solid rgb(182, 140, 80);
+    margin-right: 20px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+body{
+    background-color: rgb(240, 245, 252);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.underline{
+    height:3px;
+    width: 50%;
+    background-color: rgb(182, 140, 80);
+    margin: auto;
+}
+.title-section{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-self:center;
+}
+.menu-comp{
+    display: flex;
+   flex-wrap: wrap;
+    align-items: center;
+    justify-content:center ;
+    margin: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.single-menu{
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    box-shadow: 2px 2px 2px rgba(0,0, 0, 0.4);
+    border-radius: 5px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    }
 
-.App-link {
-  color: #61dafb;
-}
+    .top-info{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-info{
+       
+        margin-left: 20px;
+    }
+    .desc{
+        font-size: .8em;
+        margin-top: 10px;
+    }
+    .price{
+        color: rgb(182, 140, 80);
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px;
+         }
+.cate-button{
+    margin: 10px;
+    font-size: 1.5em;
+    border: none;
+    background-color:rgb(240, 245, 252) ;
+    color: rgb(182, 140, 80) ;
+    font-weight: bold;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
